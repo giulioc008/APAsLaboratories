@@ -18,7 +18,7 @@ int main() {
     int flag;                                                                                           // the flag that regulates the exit
     long double ald;                                                                                    // the number express in long double
 
-    flag = 1;                                                                                           // 00000000 00000000 00000000 00000001
+    flag = 1;                                                                                           // 00000000 00000001
     pointer = (char *) &flag;                                                                           // 0 (00000000) if Big Endian, 1 (00000001) if Little Endian
     if(pointer[0] == 1) {                                                                               // if that checks the architecture of the computer
         bigEndian = FALSE;
